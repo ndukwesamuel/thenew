@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@400;600;700&family=Permanent+Marker&display=swap");
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* this is the background-color: ; */
+  --prymary-bg-clr: #002e74;
+  --banner-Thik-col: #cd1100;
+
+  /* this is the btn color */
+  --btn-clr: #ea5d47;
+
+  /* font color */
+  --font-col-darblue: #1c4377;
+
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+  =============== 
+  Global Styles
+  ===============
+  */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.the_des_sec,
+.dex_img {
+  display: none;
+}
+
+.bold_blue {
+  font-weight: 600;
+  color: var(--prymary-bg-clr);
+}
+
+/* .HSec1 {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+} */
+
+/* .HSec1::after {
+  content: "";
+  background: url(./images/bkg_waves2.svg);
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
+
+.section_one {
+  background-color: var(--prymary-bg-clr);
+  color: var(--clr-white);
+  width: 100%;
+}
+
+.quote_section {
+  font-size: 2rem;
+}
+
+.text_center {
+  text-align: center;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.sec_one {
+  text-align: center;
+  margin: 0 1rem 0 1rem;
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.Hsection1_row_1 {
+  padding-top: 2rem;
+}
+
+.Hsection1_row_1 > p {
+  text-align: center;
+}
+.Hsection1_vidoe_div,
+.Hsection1_bord2_img {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.Hsection1_ {
+  /* background-color: hsl(209, 61%, 16%); */
+  background-color: rgba(0, 0, 0, 0.29);
+  padding: 1rem 0;
+}
+
+.Hsection1_count_down {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  text-align: center;
+}
+.Hsection1_count_down_flex_item > div {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  color: white;
+  font-size: 2rem;
+  padding-left: 0rem;
+  margin-top: 1rem;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.Hsection1_div > p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.Hsection1_P {
+  font-weight: bolder;
+}
+
+.btn_live {
+  background-color: var(--btn-clr);
+  color: var(--clr-white);
+}
+.btn_live_p1 {
+  font-size: 1.3em;
+  font-weight: bolder;
+}
+
+.btn_live_p2 {
+  font-size: 0.7em;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .btn_live {
+    margin-left: 0rem;
+  }
+  .btn_live_p1 {
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Hsection1_div > p {
+    font-size: 1.4rem;
+  }
+  .Hsection1_ {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  .Hsection1_div_p1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+  .Hsection1_bord2_img {
+    width: 30rem;
+  }
+
+  .Hsection1_ {
+    margin-left: -1rem;
+    margin-bottom: 1rem;
+  }
+  .btn_live {
+    color: white;
+    margin-left: 0rem;
+  }
+  .btn_live_p1 {
+    font-size: 2rem;
+  }
+
+  .sec_one {
+    font-size: 2.3rem;
+    padding: 0 2rem;
+    font-weight: 900;
+  }
+
+  .Hsection1_row_1 > p {
+    padding: 0 1rem;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .the_des_sec,
+  .dex_img {
+    display: block;
+  }
+  .sec_Tow,
+  .mob_img {
+    display: none;
+  }
+
+  .dex_img img {
+    width: 70%;
+    margin: auto;
+    display: block;
+    padding-top: 2rem;
+  }
+  .sec_one {
+    font-size: 3rem;
+    padding: 0 8rem;
+  }
+
+  .Hsection1_row_1 > p {
+    font-size: 2rem;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .btn_inLAp {
+    display: block;
+    margin: auto;
+    /* width: 60%; */
+    padding: 10px;
+  }
+}
