@@ -1,26 +1,27 @@
-import { useState } from 'react/cjs/react.development'
-import Footer_img from '../images/one-funnel-away_logo_funnel.png'
+import React, { useState } from "react";
 
-import How from '../images/headline_ofa2-min.png'
-import './Resgistration.css'
+import Footer_img from "../images/one-funnel-away_logo_funnel.png";
 
-import LoginForm from './LoginForm'
+import How from "../images/headline_ofa2-min.png";
+import "./Resgistration.css";
+
+import LoginForm from "./LoginForm";
 
 const Resgistration = () => {
-  const [login, setLogin] = useState(false)
-  const [signUp, setSignUp] = useState(false)
+  const [login, setLogin] = useState(false);
+  const [signUp, setSignUp] = useState(false);
 
   const handle = () => {
-    console.log('working')
-    setLogin(true)
-    setSignUp(false)
-  }
+    console.log("working");
+    setLogin(true);
+    setSignUp(false);
+  };
 
   const handleSignUP = () => {
-    console.log('working')
-    setLogin(false)
-    setSignUp(true)
-  }
+    console.log("working");
+    setLogin(false);
+    setSignUp(true);
+  };
 
   return (
     <>
@@ -63,7 +64,7 @@ const Resgistration = () => {
         </section>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Resgistration
+export default Resgistration;
