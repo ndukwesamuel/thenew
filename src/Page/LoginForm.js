@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development";
+import React, { useState } from "react";
 
 const LoginForm = () => {
   const [login, setLogin] = useState(true);
@@ -52,15 +52,15 @@ const LoginForm = () => {
 
           <div className="the_button">
             <button onClick={HandelSub} class="btn btn-primary">
-              dont need it 
+              dont need it
             </button>
             <button onClick={HandelSub} class="btn btn-primary">
-            Login 
+              Login
             </button>
-              <button onClick={forgetPas} class="btn btn-primary">
-                Forgot Password?
-              </button>
-         
+            <button onClick={forgetPas} class="btn btn-primary">
+              Forgot Password?
+            </button>
+
             <p>
               **Please be sure to register with the same email address you used
               to purchase!**

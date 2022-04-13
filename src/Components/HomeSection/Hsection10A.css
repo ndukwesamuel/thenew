@@ -99,13 +99,13 @@
   width: 60%;
   height: 3rem;
   margin-right: 0.5rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .step1_input_five :last-child {
   width: 35%;
   height: 3rem;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .Hsection10_form_step1_form_header {
