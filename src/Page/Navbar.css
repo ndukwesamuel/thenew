@@ -1,6 +1,7 @@
 nav {
   background-color: var(--prymary-bg-clr);
   font-family: "Montserrat", sans-serif;
+  border-bottom: 1px dashed white;
 }
 
 nav img {
